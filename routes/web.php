@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Backend\SolutionsTypeController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\SubCategoryController;
 
 
 // =========================================================================== Backend Routes
@@ -46,3 +47,6 @@ Route::resource('manage-solution-type', SolutionsTypeController::class);
 
 // ==== Manage category
 Route::resource('manage-category', CategoryController::class);
+
+// ==== Manage sub category
+Route::resource('manage-sub-category', SubCategoryController::class);

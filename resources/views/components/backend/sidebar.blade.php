@@ -31,7 +31,7 @@
                   </a>
                 </li>
 
-                <li class="sidebar-list {{ request()->routeIs('manage-solution-type.index', 'manage-category.index', 'manage-product.index', 'manage-sub-product.index', 'product-sizes.index', 'product-prints.index', 'product-details.index') ? 'active' : '' }}">
+                <li class="sidebar-list {{ request()->routeIs('manage-solution-type.index', 'manage-category.index', 'manage-sub-category.index', 'manage-sub-product.index', 'product-sizes.index', 'product-prints.index', 'product-details.index') ? 'active' : '' }}">
                   <i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon"> 
@@ -45,6 +45,7 @@
                   <ul class="sidebar-submenu">
                     <li><a href="{{ route('manage-solution-type.index') }}" class="{{ request()->routeIs('manage-solution-type.index') ? 'active' : '' }}">Add Solutions</a></li>
                     <li><a href="{{ route('manage-category.index') }}" class="{{ request()->routeIs('manage-category.index') ? 'active' : '' }}">Category</a></li>
+                    <li><a href="{{ route('manage-sub-category.index') }}" class="{{ request()->routeIs('manage-sub-category.index') ? 'active' : '' }}">Sub Category</a></li>
                   </ul>
                 </li>
 
