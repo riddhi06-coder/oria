@@ -44,6 +44,7 @@
                   </a>
                   <ul class="sidebar-submenu">
                     <li><a href="{{ route('manage-solution-type.index') }}" class="{{ request()->routeIs('manage-solution-type.index') ? 'active' : '' }}">Add Solutions</a></li>
+                    <li><a href="{{ route('manage-category.index') }}" class="{{ request()->routeIs('manage-category.index') ? 'active' : '' }}">Category</a></li>
                   </ul>
                 </li>
 

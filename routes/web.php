@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 
 use App\Http\Controllers\Backend\SolutionsTypeController;
+use App\Http\Controllers\Backend\CategoryController;
 
 
 // =========================================================================== Backend Routes
@@ -42,3 +43,6 @@ Route::group(['middleware' => ['auth:web', \App\Http\Middleware\PreventBackHisto
 
 // ==== Manage Solutions
 Route::resource('manage-solution-type', SolutionsTypeController::class);
+
+// ==== Manage category
+Route::resource('manage-category', CategoryController::class);
