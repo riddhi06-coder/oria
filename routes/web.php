@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\BannerIntroController;
 use App\Http\Controllers\Backend\GalleryController;
+use App\Http\Controllers\Backend\ProjectsController;
 
 
 // =========================================================================== Backend Routes
@@ -56,4 +57,9 @@ Route::resource('manage-sub-category', SubCategoryController::class);
 // ==== Manage Banner Intro
 Route::resource('manage-banner-intro', BannerIntroController::class);
 
+// ==== Manage Gallery
 Route::resource('manage-gallery', GalleryController::class);
+
+// ==== Manage Add Proejcts
+Route::resource('manage-projects', ProjectsController::class);
+Route::post('/projects/update-status', [ProjectsController::class, 'updateStatus'])->name('projects.updateStatus');
