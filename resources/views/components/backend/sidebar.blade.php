@@ -49,7 +49,7 @@
                   </ul>
                 </li>
 
-                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-featured-products.index', 'manage-app-intro.index', 'manage-app-intro.index') ? 'active' : '' }}">
+                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-app-intro.index', 'manage-app-intro.index') ? 'active' : '' }}">
                   <i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon"> 
@@ -62,6 +62,7 @@
                   </a>
                   <ul class="sidebar-submenu">
                     <li><a href="{{ route('manage-banner-intro.index') }}" class="{{ request()->routeIs('manage-banner-intro.index') ? 'active' : '' }}">Banner & Intro</a></li>
+                    <li><a href="{{ route('manage-gallery.index') }}" class="{{ request()->routeIs('manage-gallery.index') ? 'active' : '' }}">Picture Gallery</a></li>
                   </ul>
                 </li>
 

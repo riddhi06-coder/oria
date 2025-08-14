@@ -11,6 +11,7 @@ use App\Http\Controllers\Backend\SolutionsTypeController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\BannerIntroController;
+use App\Http\Controllers\Backend\GalleryController;
 
 
 // =========================================================================== Backend Routes
@@ -54,3 +55,5 @@ Route::resource('manage-sub-category', SubCategoryController::class);
 
 // ==== Manage Banner Intro
 Route::resource('manage-banner-intro', BannerIntroController::class);
+
+Route::resource('manage-gallery', GalleryController::class);
