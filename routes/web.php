@@ -13,6 +13,8 @@ use App\Http\Controllers\Backend\SubCategoryController;
 use App\Http\Controllers\Backend\BannerIntroController;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\ProjectsController;
+use App\Http\Controllers\Backend\HomeSolutionsController;
+
 
 
 // =========================================================================== Backend Routes
@@ -63,3 +65,6 @@ Route::resource('manage-gallery', GalleryController::class);
 // ==== Manage Add Proejcts
 Route::resource('manage-projects', ProjectsController::class);
 Route::post('/projects/update-status', [ProjectsController::class, 'updateStatus'])->name('projects.updateStatus');
+
+// ==== Manage Our Solutions
+Route::resource('manage-our-solutions', HomeSolutionsController::class);
