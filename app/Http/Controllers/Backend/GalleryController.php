@@ -22,7 +22,6 @@ class GalleryController extends Controller
         return view('backend.home.gallery.index', compact('galleries'));
     }
 
-
     public function create(Request $request)
     {
         return view('backend.home.gallery.create');
