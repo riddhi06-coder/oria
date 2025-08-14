@@ -49,6 +49,22 @@
                   </ul>
                 </li>
 
+                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-featured-products.index', 'manage-app-intro.index', 'manage-app-intro.index') ? 'active' : '' }}">
+                  <i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <svg class="stroke-icon"> 
+                      <use href="{{ asset('admin/assets/svg/icon-sprite.svg#stroke-icons') }}"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                      <use href="{{ asset('admin/assets/svg/icon-sprite.svg#stroke-icons') }}"></use>
+                    </svg>
+                    <span>Home page</span>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="{{ route('manage-banner-intro.index') }}" class="{{ request()->routeIs('manage-banner-intro.index') ? 'active' : '' }}">Banner & Intro</a></li>
+                  </ul>
+                </li>
+
 
               </ul>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

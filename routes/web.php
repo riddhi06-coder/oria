@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Backend\SolutionsTypeController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\SubCategoryController;
+use App\Http\Controllers\Backend\BannerIntroController;
 
 
 // =========================================================================== Backend Routes
@@ -50,3 +51,6 @@ Route::resource('manage-category', CategoryController::class);
 
 // ==== Manage sub category
 Route::resource('manage-sub-category', SubCategoryController::class);
+
+// ==== Manage Banner Intro
+Route::resource('manage-banner-intro', BannerIntroController::class);
