@@ -66,7 +66,7 @@
                   </ul>
                 </li>
 
-                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-our-features.index','manage-customized.index') ? 'active' : '' }}">
+                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-our-features.index','manage-customized.index','manage-our-partners') ? 'active' : '' }}">
                   <i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon"> 
@@ -83,6 +83,24 @@
                     <li><a href="{{ route('manage-our-features.index') }}" class="{{ request()->routeIs('manage-our-features.index') ? 'active' : '' }}">Our Features</a></li>
                     <li><a href="{{ route('manage-our-solutions.index') }}" class="{{ request()->routeIs('manage-our-solutions.index') ? 'active' : '' }}">Our Solutions</a></li>
                     <li><a href="{{ route('manage-customized.index') }}" class="{{ request()->routeIs('manage-customized.index') ? 'active' : '' }}">Customized Solutions</a></li>
+                    <li><a href="{{ route('manage-our-partners.index') }}" class="{{ request()->routeIs('manage-our-partners.index') ? 'active' : '' }}">Our Partners</a></li>
+                  </ul>
+                </li>
+
+
+                <li class="sidebar-list {{ request()->routeIs('manage-blogs.index', 'manage-category.index', 'manage-sub-category.index', 'manage-sub-product.index', 'product-sizes.index', 'product-prints.index', 'product-details.index') ? 'active' : '' }}">
+                  <i class="fa fa-thumb-tack"> </i>
+                  <a class="sidebar-link sidebar-title" href="#">
+                    <svg class="stroke-icon"> 
+                      <use href="{{ asset('admin/assets/svg/icon-sprite.svg#stroke-blog') }}"></use>
+                    </svg>
+                    <svg class="fill-icon">
+                      <use href="{{ asset('admin/assets/svg/icon-sprite.svg#stroke-blog') }}"></use>
+                    </svg>
+                    <span>Blogs</span>
+                  </a>
+                  <ul class="sidebar-submenu">
+                    <li><a href="{{ route('manage-blogs.index') }}" class="{{ request()->routeIs('manage-blogs.index') ? 'active' : '' }}">Blog</a></li>
                   </ul>
                 </li>
 

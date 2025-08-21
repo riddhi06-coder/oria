@@ -16,6 +16,8 @@ use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\HomeSolutionsController;
 use App\Http\Controllers\Backend\HomeFeaturesController;
 use App\Http\Controllers\Backend\HomeCustomizedController;
+use App\Http\Controllers\Backend\HomePartnersController;
+use App\Http\Controllers\Backend\BlogController;
 
 
 
@@ -76,3 +78,9 @@ Route::resource('manage-our-features', HomeFeaturesController::class);
 
 // ==== Manage Customized Solutions
 Route::resource('manage-customized', HomeCustomizedController::class);
+
+// ==== Manage Our Partners
+Route::resource('manage-our-partners', HomePartnersController::class);
+
+// ==== Manage Blogs
+Route::resource('manage-blogs', BlogController::class);
