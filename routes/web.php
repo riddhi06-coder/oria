@@ -14,6 +14,7 @@ use App\Http\Controllers\Backend\BannerIntroController;
 use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\HomeSolutionsController;
+use App\Http\Controllers\Backend\HomeFeaturesController;
 
 
 
@@ -68,3 +69,6 @@ Route::post('/projects/update-status', [ProjectsController::class, 'updateStatus
 
 // ==== Manage Our Solutions
 Route::resource('manage-our-solutions', HomeSolutionsController::class);
+
+// ==== Manage Our Features
+Route::resource('manage-our-features', HomeFeaturesController::class);

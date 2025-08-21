@@ -66,7 +66,7 @@
                   </ul>
                 </li>
 
-                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-app-intro.index') ? 'active' : '' }}">
+                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-our-features.index') ? 'active' : '' }}">
                   <i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon"> 
@@ -79,8 +79,8 @@
                   </a>
                   <ul class="sidebar-submenu">
                     <li><a href="{{ route('manage-banner-intro.index') }}" class="{{ request()->routeIs('manage-banner-intro.index') ? 'active' : '' }}">Banner & Intro</a></li>
-                    <li><a href="{{ route('manage-gallery.index') }}" class="{{ request()->routeIs('manage-gallery.index') ? 'active' : '' }}">Picture Gallery</a></li>
-                    <li><a href="{{ route('manage-gallery.index') }}" class="{{ request()->routeIs('manage-gallery.index') ? 'active' : '' }}">Features</a></li>
+                    <li><a href="{{ route('manage-gallery.index') }}" class="{{ request()->routeIs('manage-gallery.index') ? 'active' : '' }}">Project Gallery</a></li>
+                    <li><a href="{{ route('manage-our-features.index') }}" class="{{ request()->routeIs('manage-our-features.index') ? 'active' : '' }}">Our Features</a></li>
                     <li><a href="{{ route('manage-our-solutions.index') }}" class="{{ request()->routeIs('manage-our-solutions.index') ? 'active' : '' }}">Our Solutions</a></li>
                   </ul>
                 </li>
