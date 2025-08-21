@@ -66,7 +66,7 @@
                   </ul>
                 </li>
 
-                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-our-features.index') ? 'active' : '' }}">
+                <li class="sidebar-list {{ request()->routeIs('manage-banner-intro.index', 'manage-gallery.index', 'manage-our-solutions.index', 'manage-our-features.index','manage-customized.index') ? 'active' : '' }}">
                   <i class="fa fa-thumb-tack"> </i>
                   <a class="sidebar-link sidebar-title" href="#">
                     <svg class="stroke-icon"> 
@@ -82,6 +82,7 @@
                     <li><a href="{{ route('manage-gallery.index') }}" class="{{ request()->routeIs('manage-gallery.index') ? 'active' : '' }}">Project Gallery</a></li>
                     <li><a href="{{ route('manage-our-features.index') }}" class="{{ request()->routeIs('manage-our-features.index') ? 'active' : '' }}">Our Features</a></li>
                     <li><a href="{{ route('manage-our-solutions.index') }}" class="{{ request()->routeIs('manage-our-solutions.index') ? 'active' : '' }}">Our Solutions</a></li>
+                    <li><a href="{{ route('manage-customized.index') }}" class="{{ request()->routeIs('manage-customized.index') ? 'active' : '' }}">Customized Solutions</a></li>
                   </ul>
                 </li>
 

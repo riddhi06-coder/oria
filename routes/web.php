@@ -15,6 +15,7 @@ use App\Http\Controllers\Backend\GalleryController;
 use App\Http\Controllers\Backend\ProjectsController;
 use App\Http\Controllers\Backend\HomeSolutionsController;
 use App\Http\Controllers\Backend\HomeFeaturesController;
+use App\Http\Controllers\Backend\HomeCustomizedController;
 
 
 
@@ -72,3 +73,6 @@ Route::resource('manage-our-solutions', HomeSolutionsController::class);
 
 // ==== Manage Our Features
 Route::resource('manage-our-features', HomeFeaturesController::class);
+
+// ==== Manage Customized Solutions
+Route::resource('manage-customized', HomeCustomizedController::class);
